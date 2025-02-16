@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guidelines Offence Filter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Guidelines Offence Filter & Next Punishment</h2>
+    
+    <!-- Offence Selection Dropdown -->
+    <div class="form-group">
+      <label for="offenceSelect">Select Offence to Filter:</label>
+      <select id="offenceSelect">
+        <option value="">-- Choose an Offence --</option>
+        <option value="Abuse of OOC">Abuse of OOC</option>
+        <option value="Combat Logging/Evading Staff">Combat Logging/Evading Staff</option>
+        <option value="Cop Baiting">Cop Baiting</option>
+        <option value="Exploiting">Exploiting</option>
+        <option value="Fail Roleplay (FRP)">Fail Roleplay (FRP)</option>
+        <option value="Failure to follow staff direction">Failure to follow staff direction</option>
+        <option value="Forced RP/Interjection">Forced RP/Interjection</option>
+        <option value="Greenzone Breach">Greenzone Breach</option>
+        <option value="GTA Driving">GTA Driving</option>
+        <option value="Hacking/Modding">Hacking/Modding</option>
+        <option value="Harassment">Harassment</option>
+        <option value="Metagaming">Metagaming</option>
+        <option value="NITRP">NITRP</option>
+        <option value="No Microphone">No Microphone</option>
+        <option value="Priority Status Breach">Priority Status Breach</option>
+        <option value="RDM">RDM</option>
+        <option value="Restricted Civ RP">Restricted Civ RP</option>
+        <option value="Sexual Remarks/Comments">Sexual Remarks/Comments</option>
+        <option value="Specialist Scene">Specialist Scene</option>
+        <option value="Staff Impersonation">Staff Impersonation</option>
+        <option value="Toxic Behavior">Toxic Behavior</option>
+        <option value="Trolling">Trolling</option>
+        <option value="VDM">VDM</option>
+        <option value="Vulgar Language">Vulgar Language</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="punishmentText">Paste Staff Interaction Summary:* </label>
+      <textarea
+        id="punishmentText"
+        placeholder="Paste the users TX History here then hit CTRL + ENTER or click Generate below"
+      ></textarea>
+    </div>
+    
+    <button id="generateNextButton">Generate</button>
+    
+    <div id="nextResult" class="result-box" style="display: none;"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
